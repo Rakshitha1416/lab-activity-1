@@ -1,0 +1,9 @@
+def multi_lists(a,b):
+    c=[]
+    for i in range(len(a)):
+        c.append(a[i]*b[i])
+    return sum(c)
+print("enter lists of same size:")    
+a=eval(input("enter first list(a):"))   
+b=eval(input("enter second list(b):"))
+print(multi_lists(a,b))
