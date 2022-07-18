@@ -1,0 +1,12 @@
+def flat(lis):
+    flatList=[]
+    for ele in lis:
+         if type(ele) is list:
+            for item in ele:
+                flatList.append(item)
+         else:
+              flatList.append(ele)
+    return flatList
+lis = [[11,22,33],[44,55,66],[77,88]]
+print("list:",lis)    
+print("flat List",flat(lis))
