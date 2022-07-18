@@ -1,0 +1,19 @@
+import prime
+print("prime numbers")
+for i in range(1,100):
+    if prime.isPrime(i):
+        print(i,end=',')
+print("\nparlindrome prime numbers")  
+for i in range(1,100):
+    if prime.isParlindromePrime(i):
+          print(i,end=',')
+print("\nEmirp numbers")      
+for i in range(1,100):
+    if prime.isEmirp(i):
+        print(i,end=',')
+print("\nMersenne prime number")
+for i in range(1,32):
+    if(mersenneprime(i)!=False):
+        print(prime.mersenneprime(i))
+print("\nTwin primes")        
+prime.printTwinprime(1000)
